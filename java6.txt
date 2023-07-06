@@ -1,0 +1,9 @@
+
+
+
+
+  cc-214(java)                        Batch-2                         seat no:_____
+________________________________________________________________________________________
+
+ 2.Create class calculation with an abstract method area( ). Create Rectangle and
+ Triangle subclasses of calculation and find area of rectangle and triangle.

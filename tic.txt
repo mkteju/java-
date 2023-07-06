@@ -1,0 +1,200 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace tictoctoeFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        int count = 1;
+        string symbole;
+        private void getTurn()
+        {
+            if (count % 2 == 0)
+            {
+                symbole = "0";
+            }
+            else
+            {
+                symbole = "x";
+            }
+        }
+        private void checkwinner()
+        {
+            if (btn1.Text == "x" && btn2.Text == "x" && btn3.Text == "x")
+            {
+                MessageBox.Show("x is winner");
+            }
+            else if (btn4.Text == "x" && btn5.Text == "x" && btn6.Text == "x")
+            {
+                MessageBox.Show("x is winner");
+            }
+            else if (btn7.Text == "x" && btn8.Text == "x" && btn9.Text == "x")
+            {
+                MessageBox.Show("x is winner");
+            }
+            else if (btn1.Text == "x" && btn4.Text == "x" && btn7.Text == "x")
+            {
+                MessageBox.Show("x is winner");
+            }
+            else if (btn2.Text == "x" && btn5.Text == "x" && btn8.Text == "x")
+            {
+                MessageBox.Show("x is winner");
+            }
+             else if (btn3.Text == "x" && btn6.Text == "x" && btn9.Text == "x")
+            {
+                MessageBox.Show("x is winner");
+            }
+            if (btn1.Text == "0" && btn2.Text == "0" && btn3.Text == "0")
+            {
+                MessageBox.Show("0 is winner");
+            }
+            else if (btn4.Text == "0" && btn5.Text == "0" && btn6.Text == "0")
+            {
+                MessageBox.Show("0 is winner");
+            }
+            else if (btn7.Text == "0" && btn8.Text == "0" && btn9.Text == "0")
+            {
+                MessageBox.Show("0 is winner");
+            }
+            else if (btn1.Text == "0" && btn4.Text == "0" && btn7.Text == "0")
+            {
+                MessageBox.Show("0 is winner");
+            }
+            else if (btn2.Text == "0" && btn5.Text == "0" && btn8.Text == "0")
+            {
+                MessageBox.Show("0 is winner");
+            }
+            else if (btn3.Text == "0" && btn6.Text == "0" && btn9.Text == "0")
+            {
+                MessageBox.Show("0 is winner");
+            }
+            else if (count >= 10)
+            {
+                MessageBox.Show("match tie");
+            } 
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            getTurn();
+            btn1.Text = symbole;
+            count++;
+            btn1.Enabled = false;
+            if(count>=5)
+            {
+                checkwinner();
+                }
+
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            getTurn();
+            btn2.Text = symbole;
+            count++;
+            btn2.Enabled = false;
+            if (count >= 5)
+            {
+                checkwinner();
+            }
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            getTurn();
+            btn3.Text = symbole;
+            count++;
+            btn3.Enabled = false;
+            if (count >= 5)
+            {
+                checkwinner();
+            }
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            getTurn();
+            btn4.Text = symbole;
+            count++;
+            btn4.Enabled = false;
+            if (count >= 5)
+            {
+                checkwinner();
+            }
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            getTurn();
+            btn5.Text = symbole;
+            count++;
+            btn5.Enabled = false;
+            if (count >= 5)
+            {
+                checkwinner();
+            }
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            getTurn();
+            btn6.Text = symbole;
+            count++;
+            btn6.Enabled = false;
+            if (count >= 5)
+            {
+                checkwinner();
+            }
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            getTurn();
+            btn7.Text = symbole;
+            count++;
+            btn7.Enabled = false;
+            if (count >= 5)
+            {
+                checkwinner();
+            }
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            getTurn();
+            btn8.Text = symbole;
+            count++;
+            btn8.Enabled = false;
+            if (count >= 5)
+            {
+                checkwinner();
+            }
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            getTurn();
+            btn9.Text = symbole;
+            count++;
+            btn9.Enabled = false;
+            if (count >= 5)
+            {
+                checkwinner();
+            }
+        }
+    }
+}
